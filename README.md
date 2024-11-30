@@ -25,7 +25,7 @@ Each project will typically include:
 
 2. **Navigate to the Desired Project:**
    ```bash
-   cd php/your-project-folder
+   cd php/name of project
    ```
 
 3. **Run the Project:**
