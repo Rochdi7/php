@@ -75,7 +75,7 @@ Your Operating System: Windows 10
 ```
 
 ## 🧪 screenshot
-![Screenshot of the Project](php/Get-user-info/screenshot.PNG)
+![Screenshot of the Project](https://i.postimg.cc/MT043Xqg/screenshot.png)
 
 ### Local Testing
 You can expect the IP address to be either `127.0.0.1` or `::1`.
