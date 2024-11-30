@@ -74,7 +74,7 @@ Your Device: Computer
 Your Operating System: Windows 10
 ```
 
-## 🧪 screenshot
+## screenshot
 ![Screenshot of the Project](https://i.postimg.cc/MT043Xqg/screenshot.png)
 
 ### Local Testing
