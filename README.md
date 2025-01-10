@@ -1,7 +1,6 @@
 
 # 🌐 PHP Projects Repository
 
-
 Welcome to the **PHP Projects Repository**! 🚀 This repository will serve as a collection of all my PHP-based projects, experiments, and learning materials. Whether you're exploring, learning, or contributing, this is the perfect place to discover creative PHP solutions.
 
 ---
