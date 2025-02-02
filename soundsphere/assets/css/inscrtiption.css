@@ -1,0 +1,120 @@
+body {
+    background-color: #1c1f26;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    background-color: #1c1f26;
+    border-color: #a8fa4f;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(168, 250, 79, 0.5);
+    /* Subtle green glow */
+}
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: #242731;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.form-control {
+    background-color: #1c1f26;
+    border: 1px solid #3a3f4c;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: #1c1f26;
+    border-color: #a8fa4f;
+    color: #ffffff;
+}
+
+.btn-continue {
+background-color: #a8fa4f;
+color: #000000;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+width: 200px;
+margin: 0 auto;
+display: block;
+padding: 12px 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: all 0.3s ease-in-out;
+}
+
+.btn-continue:hover {
+background: linear-gradient(45deg, #A8FA4F, #32CD7C); 
+color: #1c1f26; 
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+transform: scale(1.05); 
+}
+
+.form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-label:hover {
+    color: #a8fa4f;
+}
+.social-connect {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-control::placeholder {
+color: #72777F; 
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.social-connect-icons i {
+    color: #a8fa4f;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-connect-icons i:hover {
+    color: #8adf3f;
+}
+
+.already-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.already-account a {
+    color: #a8fa4f;
+    text-decoration: none;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,139 @@
+body {
+    background-color: #1c1f26;
+    color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+}
+
+
+
+/* Apply Poppins to body and paragraphs */
+body, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar {
+    background-color: #242731;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Reduced width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%; /* Make the sidebar full width on very small screens */
+        height: auto; /* Adjust height for small screens */
+        position: relative; /* Switch to relative positioning on small screens */
+    }
+}
+
+.sidebar a {
+    color: #ffffff;
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.sidebar a:hover {
+    background-color: #a8fa4f;
+    color: #1c1f26;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.sidebar .active {
+    background-color: #a8fa4f;
+    color: black;
+}
+.sidebar .active:hover{
+    background-color: #32CD7C;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.sidebar-header {
+    color: #a8fa4f;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.collapse {
+    padding-left: 20px;
+}
+
+.sidebar .collapse li {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.sidebar .collapse li a {
+    color: #bbb;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    transition: none;
+}
+
+.sidebar .collapse li a:hover {
+    background-color: #a8fa4f;
+    color: black;
+}
+
+.sidebar .collapse li a i {
+    margin-right: 8px;
+}
+
+/* Remove duplicate chevron icons */
+.sidebar .dropdown-toggle .fa-chevron-down {
+    display: none;
+}
+
+.sidebar .collapse.in + .dropdown-toggle .fa-chevron-down {
+    display: inline-block;
+}

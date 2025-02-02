@@ -1,0 +1,232 @@
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.form-add {
+    font-size: 0.9rem;
+    background-color: #1C1F26;
+    border-color: #72777F;
+    color: #FFFFFF;
+}
+
+.form-control {
+    background-color: #1C1F26;
+    border-color: #72777F;
+    color: #FFFFFF;
+}
+
+.form-control:focus {
+    background-color: #1C1F26 !important;
+    border-color: #A8FA4F !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 8px rgba(168, 250, 79, 0.5) !important;
+}
+
+
+.btn-primary {
+    background-color: #A8FA4F;
+    border-color: #A8FA4F;
+}
+
+.btn-primary:hover {
+    background-color: #32CD7C;
+    border-color: #32CD7C;
+}
+
+.btn-custom {
+    background-color: #A8FA4F;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #A8FA4F, #32CD7C);
+    color: #1C1F26;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: 2px solid #FF4F4F;
+    color: #FF4F4F;
+    width: 120px;
+    padding: 0.375rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cancel:hover {
+    background-color: #FF4F4F;
+    color: #FFFFFF;
+    border-color: #FF4F4F;
+}
+
+.btn-cancel:active {
+    background-color: #FF3333;
+    border-color: #FF3333;
+}
+
+.btn-cancel:focus {
+    box-shadow: 0 0 0 3px rgba(255, 79, 79, 0.3);
+}
+
+.btn-cancel i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.alert {
+    font-size: 0.9rem;
+}
+
+.btn-add {
+    font-size: 1rem;
+    background-color: #A8FA4F;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-add:hover {
+    background: linear-gradient(45deg, #A8FA4F, #32CD7C);
+    color: #1C1F26;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    border-color: #32CD7C;
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .col-md-8,
+    .col-lg-9 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.85rem;
+    }
+}
+
+/*pupup */
+.confirmation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.confirmation-popup .popup-content {
+    background-color: #1C1F26;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.confirmation-popup .popup-content h5 {
+    color: #FFCC00;
+}
+
+.confirmation-popup .popup-content p {
+    color: #FFFFFF;
+}
+
+.confirmation-popup .popup-content .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.confirmation-popup .popup-content .btn-success {
+    background-color: #a8fa4f;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.confirmation-popup .popup-content .btn-success:hover {
+    background: linear-gradient(45deg, #a8fa4f, #32cd7c);
+    color: #1c1f26;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.confirmation-popup .popup-content .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #ff4f4f;
+    color: #ff4f4f;
+    width: 120px;
+    padding: 15px 20px;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.confirmation-popup .popup-content .btn-secondary:hover {
+    background-color: #ff4f4f;
+    color: #ffffff;
+    border-color: #ff4f4f;
+}
+#countryName::placeholder,
+#isoCode::placeholder {
+    color: #72777F; 
+}

@@ -1,0 +1,10 @@
+/* Target elements specifically in the dashboard content */
+.dashboard-body {
+    padding-left: 250px; /* Apply padding only to the dashboard content */
+    margin-top: 80px; /* Apply margin only to the dashboard content */
+}
+
+.dashboard-container-fluid {
+    margin-left: 250px;
+    padding-top: 80px;
+}
