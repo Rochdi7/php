@@ -1,2 +1,3 @@
 Initializing dummy file
 admin.py file add in blog application - Iteration 1
+admin.py file add in blog application - Iteration 2
