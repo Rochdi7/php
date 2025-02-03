@@ -4,3 +4,4 @@ add admin - Iteration 2
 update blog - Iteration 3
 fix bug - Iteration 4
 ui tweak - Iteration 5
+finalize - Iteration 6
