@@ -1,1 +1,2 @@
 Initializing PDF Reader log file
+Initialize PDF Reader project - Iteration 1
