@@ -5,3 +5,4 @@ Implement PDF loading - Iteration 3
 Fix rendering issues - Iteration 4
 Enhance UI styles - Iteration 5
 Finalize PDF Reader - Iteration 6
+Initialize PDF Reader project - Iteration 1
