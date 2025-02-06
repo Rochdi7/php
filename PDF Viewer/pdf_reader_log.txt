@@ -2,3 +2,4 @@ Initializing PDF Reader log file
 Initialize PDF Reader project - Iteration 1
 Add UI structure - Iteration 2
 Implement PDF loading - Iteration 3
+Fix rendering issues - Iteration 4
