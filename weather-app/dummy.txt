@@ -2,3 +2,4 @@ Initialisation du fichier de test
 Initialisation du projet météo - Iteration 1
 Ajout de la gestion des villes - Iteration 2
 Intégration de l'API OpenWeatherMap - Iteration 3
+Correction d'affichage des données météo - Iteration 4
