@@ -10,13 +10,13 @@ Below is the preview of the project
 
 | Capture 1                  | Capture 2                   |
 |--------------------------------------|-------------------------------------|
-| ![Capture](Capture.PNG) | ![Capture2](Capture2.PNG)        |
+| ![Capture](assets/Capture.PNG) | ![Capture2](assets/Capture2.PNG)        |
 
 <br>
 
 | Capture 3                    |                 
 |--------------------------------------
-| ![Capture3](Capture3.PNG) | 
+| ![Capture3](assets/Capture3.PNG) | 
 
 ## Features
 - 🌍 Select from a list of major Moroccan cities.
