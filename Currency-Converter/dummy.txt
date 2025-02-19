@@ -6,3 +6,4 @@ fix bug - Iteration 4
 ui tweak - Iteration 5
 finalize - Iteration 6
 initialize currency converter project - Iteration 1
+add exchange rate API integration - Iteration 2
