@@ -9,3 +9,4 @@ initialize currency converter project - Iteration 1
 add exchange rate API integration - Iteration 2
 implement currency selection feature - Iteration 3
 fix conversion calculation bug - Iteration 4
+improve UI for better user experience - Iteration 5
