@@ -1,0 +1,41 @@
+# Laravel Directories
+/node_modules
+/vendor
+/public/build
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/vite-manifest.json
+
+# Storage (except user uploads)
+storage/*
+!storage/app/public
+/storage/*.key
+
+# Laravel Environment
+.env
+.env.backup
+.env.production
+
+# Laravel Framework & PHPUnit
+.phpunit.cache
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+# IDE & Editor Files
+.phpactor.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Logs, Debugging, and Cache
+npm-debug.log
+yarn-error.log
+/auth.json
+/.cache
+/.logs
+/.coverage
+/.phpstorm.meta.php
