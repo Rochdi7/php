@@ -4,3 +4,4 @@ Setup Laravel. - Iteration 2
 First push. - Iteration 3
 Add auth system. - Iteration 4
 Setup database. - Iteration 5
+Setup Laravel. - Iteration 6
