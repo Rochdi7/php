@@ -1,1 +1,2 @@
 Initializing test log file
+Setup database. - Iteration 1
