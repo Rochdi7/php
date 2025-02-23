@@ -12,3 +12,4 @@ Setup Laravel. - Iteration 10
 Configure factories. - Iteration 1
 Configure factories. - Iteration 2
 Refine auth system. - Iteration 3
+Configure factories. - Iteration 4
