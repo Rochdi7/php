@@ -15,3 +15,4 @@ Refine auth system. - Iteration 3
 Configure factories. - Iteration 4
 Refine auth system. - Iteration 5
 Improve routing. - Iteration 6
+Setup migrations. - Iteration 7
