@@ -20,3 +20,4 @@ Setup middleware. - Iteration 8
 Second push. - Iteration 9
 Refine auth system. - Iteration 10
 Include facts section. - Iteration 1
+Style contact info. - Iteration 2
