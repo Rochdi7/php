@@ -23,3 +23,4 @@ Include facts section. - Iteration 1
 Style contact info. - Iteration 2
 Add sponsors section. - Iteration 3
 Include facts section. - Iteration 4
+Design hero section. - Iteration 5
