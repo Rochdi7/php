@@ -19,3 +19,4 @@ Setup migrations. - Iteration 7
 Setup middleware. - Iteration 8
 Second push. - Iteration 9
 Refine auth system. - Iteration 10
+Include facts section. - Iteration 1
