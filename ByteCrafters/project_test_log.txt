@@ -26,3 +26,4 @@ Include facts section. - Iteration 4
 Design hero section. - Iteration 5
 Setup newsletter form. - Iteration 6
 Build services section. - Iteration 7
+Include facts section. - Iteration 8
