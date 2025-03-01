@@ -34,3 +34,4 @@ Create stats section. - Iteration 2
 Enhance layout. - Iteration 3
 Add team showcase. - Iteration 4
 Add about template. - Iteration 5
+Design hero section. - Iteration 6
