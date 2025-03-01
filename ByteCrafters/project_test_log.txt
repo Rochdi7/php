@@ -36,3 +36,4 @@ Add team showcase. - Iteration 4
 Add about template. - Iteration 5
 Design hero section. - Iteration 6
 Design hero section. - Iteration 7
+Style team stats. - Iteration 8
