@@ -30,3 +30,4 @@ Include facts section. - Iteration 8
 Create offer section. - Iteration 9
 Design hero section. - Iteration 10
 Setup About Us route. - Iteration 1
+Create stats section. - Iteration 2
