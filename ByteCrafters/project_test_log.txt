@@ -45,3 +45,4 @@ Setup blog route. - Iteration 3
 Style categories sidebar. - Iteration 4
 Style categories sidebar. - Iteration 5
 Add latest articles display. - Iteration 6
+Setup blog route. - Iteration 7
