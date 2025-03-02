@@ -41,3 +41,4 @@ Setup About Us route. - Iteration 9
 Setup About Us route. - Iteration 10
 Design articles section. - Iteration 1
 Enhance blog layout. - Iteration 2
+Setup blog route. - Iteration 3
