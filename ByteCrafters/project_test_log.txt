@@ -40,3 +40,4 @@ Style team stats. - Iteration 8
 Setup About Us route. - Iteration 9
 Setup About Us route. - Iteration 10
 Design articles section. - Iteration 1
+Enhance blog layout. - Iteration 2
