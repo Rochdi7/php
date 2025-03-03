@@ -50,3 +50,4 @@ Implement read more button. - Iteration 8
 Enhance blog layout. - Iteration 9
 Enhance blog layout. - Iteration 10
 Create form fields. - Iteration 1
+Implement submit button. - Iteration 2
