@@ -60,3 +60,4 @@ Refine UI. - Iteration 8
 Add contact details. - Iteration 9
 Implement submit button. - Iteration 10
 Create showcase layout. - Iteration 1
+Style portfolio. - Iteration 2
