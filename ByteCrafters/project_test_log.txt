@@ -65,3 +65,4 @@ Implement CTA button. - Iteration 3
 Refine UI. - Iteration 4
 Implement CTA button. - Iteration 5
 Optimize styles. - Iteration 6
+Optimize styles. - Iteration 7
