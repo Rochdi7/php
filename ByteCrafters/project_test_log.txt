@@ -64,3 +64,4 @@ Style portfolio. - Iteration 2
 Implement CTA button. - Iteration 3
 Refine UI. - Iteration 4
 Implement CTA button. - Iteration 5
+Optimize styles. - Iteration 6
