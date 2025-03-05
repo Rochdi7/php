@@ -74,3 +74,4 @@ Implement CTA button. - Iteration 2
 Design hero section. - Iteration 3
 Enhance grid layout. - Iteration 4
 Add services template. - Iteration 5
+Add service details. - Iteration 6
