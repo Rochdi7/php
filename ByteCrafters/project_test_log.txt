@@ -77,3 +77,4 @@ Add services template. - Iteration 5
 Add service details. - Iteration 6
 Enhance grid layout. - Iteration 7
 Optimize styles. - Iteration 8
+Style services page. - Iteration 9
