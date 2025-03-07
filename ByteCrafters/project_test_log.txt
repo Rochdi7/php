@@ -79,3 +79,4 @@ Enhance grid layout. - Iteration 7
 Optimize styles. - Iteration 8
 Style services page. - Iteration 9
 Optimize styles. - Iteration 10
+Create team layout. - Iteration 1
