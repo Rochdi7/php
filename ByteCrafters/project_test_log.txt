@@ -88,3 +88,4 @@ Implement CTA button. - Iteration 6
 Optimize styles. - Iteration 7
 Add team details. - Iteration 8
 Add team details. - Iteration 9
+Style team page. - Iteration 10
