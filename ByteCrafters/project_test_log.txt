@@ -84,3 +84,4 @@ Style team page. - Iteration 2
 Add team template. - Iteration 3
 Setup team route. - Iteration 4
 Optimize styles. - Iteration 5
+Implement CTA button. - Iteration 6
