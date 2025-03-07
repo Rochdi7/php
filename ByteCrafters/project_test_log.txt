@@ -82,3 +82,4 @@ Optimize styles. - Iteration 10
 Create team layout. - Iteration 1
 Style team page. - Iteration 2
 Add team template. - Iteration 3
+Setup team route. - Iteration 4
