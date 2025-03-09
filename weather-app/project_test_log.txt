@@ -1,2 +1,3 @@
 Initializing test log file
 Improved UX & icons. - Iteration 1
+Fetched weather data. - Iteration 2
