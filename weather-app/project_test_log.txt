@@ -4,3 +4,4 @@ Fetched weather data. - Iteration 2
 Styled UI & cards. - Iteration 3
 Fetched weather data. - Iteration 4
 Added city dropdown. - Iteration 5
+Added city dropdown. - Iteration 6
