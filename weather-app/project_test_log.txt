@@ -7,3 +7,4 @@ Added city dropdown. - Iteration 5
 Added city dropdown. - Iteration 6
 Added city dropdown. - Iteration 7
 Added city dropdown. - Iteration 8
+Styled UI & cards. - Iteration 9
