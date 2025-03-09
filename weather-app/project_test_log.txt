@@ -1,1 +1,2 @@
 Initializing test log file
+Improved UX & icons. - Iteration 1
