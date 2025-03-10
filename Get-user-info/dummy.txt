@@ -1,3 +1,4 @@
 Initializing dummy file
 init project - Iteration 1
 add user info - Iteration 2
+fix bug - Iteration 3
