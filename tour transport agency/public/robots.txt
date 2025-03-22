@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search
+Disallow: /contact/send
+Disallow: /cgi-bin/
+
+# Allow Crawling of Important Pages
+Allow: /$
+Allow: /transport
+Allow: /excursions/
+Allow: /excursions/*
+Allow: /circuits/
+Allow: /circuits/*
+Allow: /assets/images/favicon/
+Allow: /favicon.ico
+Allow: /assets/images/icons/android-chrome-192x192.png
+Allow: /assets/images/icons/android-chrome-512x512.png
+Allow: /assets/images/icons/apple-touch-icon.png
+Allow: /assets/images/icons/favicon.ico
+
+
+# Sitemap for Search Engines
+Sitemap: {{ url('/sitemap.xml') }}

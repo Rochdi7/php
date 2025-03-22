@@ -1,0 +1,476 @@
+:root {
+    --primary-color: #004B8D;
+    --accent-color: #F97316;
+    --secondary-color: #0EA5E9;
+    --text-color: #333333;
+    --white-color: #FAFAFA;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url("../images/activities/marrakech.jpg") no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: var(--white-color);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Right Side (formerly sidebar) */
+.right-side, .offers-section {
+    background: linear-gradient(125deg, rgba(0, 75, 141, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+.right-side h4, .offers-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-side ul li, .offer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.offer-item:last-child, .right-side ul li:last-child {
+    border-bottom: none;
+}
+
+.right-side ul li i, .offer-icon {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+
+/* Transport Section */
+.transport-section {
+    padding: 50px 0;
+}
+
+.transport-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white-color);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100px;
+}
+
+.departure {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.destination {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.price-btn {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.price-btn::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: transform 0.7s;
+}
+
+.price-btn:hover {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.price-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* Transport Image */
+.transport-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Modal Styling */
+.modal-content.modern-modal {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+/* Modern Modal Styling */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.modal-header {
+    background: var(--primary-color2);
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.transport-modal-image {
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Modern Modal Styling */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border: 2px solid var(--primary-color2);
+    background: var(--white-color);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Header with Stylish Look */
+.modal-header {
+    background: var(--primary-color2);
+    color: var(--title-color);
+    font-weight: bold;
+    border-bottom: none;
+    position: relative;
+    padding: 15px 20px;
+}
+
+/* Close Button with Modern Look */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--title-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+/* Body with Stylish Image */
+.modal-body {
+    padding: 20px;
+}
+
+.transport-modal-image {
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylish Reserve Button */
+.secondary-btn1 {
+    border-radius: 30px;
+    
+    font-family: var(--font-rubik);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--title-color);
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 17px 31px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #F97316;
+    gap: 7px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.secondary-btn1::after {
+    background-color: #004B8D;
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--title-color);
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: transform 0.7s;
+}
+
+.secondary-btn1:hover {
+    color: var(--white-color);
+}
+
+.secondary-btn1:hover::after {
+    background-color: #F97316;
+    border: none;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* ================= SECTION transport touristique ================= */
+
+.luxury-vehicles {
+    position: relative;
+    padding: 80px 0;
+    background: #F8FAFC;
+}
+
+/* White Background Container with Left & Right Spacing */
+.luxury-vehicles-container {
+    background: white;
+    border-radius: 25px;
+    padding: 60px 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Inner Content Container */
+.content-container {
+    padding: 20px 0;
+}
+
+/* Decorative Elements Inside */
+.deco-left, .deco-right {
+    position: absolute;
+    width: 350px;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.deco-left {
+    left: -20px;
+    top: 15%;
+}
+
+.deco-right {
+    right: -20px;
+    bottom: 15%;
+}
+
+/* Vehicle Items */
+.vehicle-item {
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Background for Each Vehicle - Rotated & Soft Border */
+.vehicle-card {
+    background: whitesmoke;
+    max-width: 250px; /* Limits the width but keeps flexibility */
+    max-width: 100%; /* Ensures it adjusts dynamically */
+    min-height: 200px; /* Keeps uniform height for balance */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vehicle Image */
+.vehicle-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.vehicle-img img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.vehicle-item:hover .vehicle-card {
+    background: var(--primary-color);
+    transform: rotate(0deg) scale(1.05);
+}
+
+.vehicle-item:hover .brand-name {
+    color: var(--primary-color);
+}
+
+.vehicle-item:hover .vehicle-img img {
+    transform: scale(1.15);
+}
+
+/* Vehicle Info */
+.vehicle-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.vehicle-info .info-item {
+    margin: 5px 0;
+}
+
+.vehicle-info i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Show Info on Hover */
+.vehicle-item:hover .vehicle-info {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .transport-image {
+        height: 200px; /* Adjusted for mobile screens */
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .offer-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .offer-icon {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .offer-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .container-fluid.transport-section {
+        overflow-x: hidden;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .container-fluid {
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+

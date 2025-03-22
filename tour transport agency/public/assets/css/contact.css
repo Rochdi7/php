@@ -1,0 +1,206 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    color: var(--white-color);
+    z-index: 3;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--white-color);
+    padding: 60px 0;
+}
+
+/* Title */
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.contact-link {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+/* Form Styling */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+.custom-input {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.custom-input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.4);
+    outline: none;
+}
+
+/* Submit Button */
+.contact-btn {
+    background: var(--secondary-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: white;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Google Map Styling */
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+.form-group {
+    padding: 10px;
+}
+/* Custom Button Styling */
+.custom-btn {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white-color);
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 16px 26px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.custom-btn::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 15%;
+    right: -20%;
+    top: -4%;
+    height: 150%;
+    width: 150%;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #0a1019;
+    transform: skewX(45deg) scale(0, 1);
+    z-index: -1;
+    transition: all 0.5s ease-out 0s;
+}
+
+.custom-btn:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+}
+
+.custom-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.custom-btn .text {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-btn:hover .text {
+    transform: translateX(-5px);
+}
+
+.custom-btn .icon {
+    align-self: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-btn:hover .icon {
+    transform: translateX(5px);
+}

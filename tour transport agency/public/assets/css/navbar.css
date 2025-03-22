@@ -1,0 +1,887 @@
+/* ===================== */
+/* TOP NAVBAR STYLES */
+/* ===================== */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 8px 5%; /* Adjusts left and right padding */
+}
+.top-navbar .contact-info a,
+.top-navbar .language-selector a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+.top-navbar .contact-info a:hover,
+.top-navbar .language-selector a:hover {
+    color: var(--secondary-color-color); /* Electric Cyan Accent */
+}
+
+/* ===================== */
+/* CONTACT INFO HOVER EFFECT */
+/* ===================== */
+
+.top-navbar .contact-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.top-navbar .contact-info a:hover {
+    color: var(--accent-color); /* Electric Cyan */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Icon Animation */
+.top-navbar .contact-info a:hover i {
+    color: var(--secondary-color); /* Warm Orange */
+    transform: scale(1.1); /* Slightly enlarge icon */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Language Selector */
+.top-navbar .language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Reduce space */
+}
+
+/* ===================== */
+/* LANGUAGE SELECTOR (MOBILE) */
+/* ===================== */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align for mobile */
+    gap: 12px; /* Space between language options */
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Language Links */
+.language-selector a {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.language-selector a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Flag Icon Styling */
+.language-selector img {
+    width: 22px;
+    height: 16px;
+    border-radius: 3px; /* Rounded corners for flags */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Flag Zoom Effect on Hover */
+.language-selector a:hover img {
+    transform: scale(1.1);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .language-selector {
+        flex-direction: row; /* Keep flags aligned horizontally */
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+
+    .language-selector a {
+        padding: 5px 8px;
+    }
+
+    .language-selector img {
+        width: 20px;
+        height: 14px;
+    }
+}
+
+/* ===================== */
+/* TRIPADVISOR SECTION */
+/* ===================== */
+
+.tripadvisor-section {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between elements */
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* TripAdvisor Link */
+.tripadvisor-section a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* TripAdvisor Image */
+.tripadvisor-section img {
+    height: 80px; /* Adjust for visibility */
+    width: 150px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.tripadvisor-section:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.tripadvisor-section a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the TripAdvisor logo */
+    opacity: 0.9; /* Reduce opacity slightly for effect */
+}
+
+/* Image Styling */
+.tripadvisor-section img {
+    height: 80px !important; /* Adjust for visibility */
+    width: 150px !important;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.tripadvisor-section:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.tripadvisor-section a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the TripAdvisor logo */
+    opacity: 0.9; /* Reduce opacity slightly for effect */
+}
+
+/* Top Navbar Icons */
+.top-navbar i {
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Flag Icons */
+.top-navbar img {
+    width: 22px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ===================== */
+/* MAIN NAVBAR STYLES */
+/* ===================== */
+/* Navbar Toggler (White Color) */
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Ad
+    just space between items */
+}
+
+/* Add padding inside each nav item for better spacing */
+.navbar-nav .nav-item {
+    padding: 5px 10px;
+}
+
+/* Dropdown Menu Styling */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Fixes the disappearing issue by delaying the close effect */
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Prevents flickering by adding a short delay */
+.navbar-nav .dropdown-menu {
+    pointer-events: auto;
+    transition-delay: 0.1s;
+}
+
+/* Makes sure there is no unintended gap */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    margin-top: 0;
+}
+
+/* Fix the dropdown-item hover effect */
+.navbar-nav .dropdown-menu .dropdown-item {
+    border-bottom: 2px solid whitesmoke;
+    color: #1e3a8a; /* Deep Blue */
+    padding: 12px 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background: #0ea5e9; /* Electric Cyan */
+    color: white;
+}
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: none !important;
+    color: white !important;
+    font-size: 24px; /* Adjust size if needed */
+}
+
+/* Customizing Toggler Icon Using FontAwesome */
+.navbar-toggler::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0c9"; /* FontAwesome bars icon */
+    font-weight: 900;
+    color: white;
+    font-size: 24px;
+}
+
+.navbar {
+    font-family: "Inter", "HelveticaNeue-Light", "Helvetica Neue Light",
+        "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+/* Navbar Container */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+    font-family: 'Amatic SC', cursive;
+
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+.navbar a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--accent-color); /* Highlight on hover */
+}
+/* Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.navbar-brand img {
+    height: 50px; 
+    width: auto;
+    max-height: 100%;
+    vertical-align: middle;
+    padding-left: 10px; 
+    padding-right: 20px;
+}
+a {
+    text-decoration: none !important;
+}
+
+/* Show Underline on Hover */
+.navbar-nav .nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Adjust Text Color on Hover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color); /* Adjust to your theme color */
+}
+
+/* ===================== */
+/* SEARCH BAR */
+/* ===================== */
+
+.search-container {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Search Input */
+/* ===================== */
+/* STYLISH SEARCH INPUT */
+/* ===================== */
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    max-width: 300px; /* Adjust width as needed */
+}
+
+/* Input Field */
+.search-input {
+    width: 100%;
+    padding: 5px 15px;
+    padding-left: 40px; /* Space for the icon */
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 75, 141, 0.15); /* Subtle shadow */
+}
+
+/* Focus Effect */
+.search-input:focus {
+    border-color: var(--secondary-color); /* Electric Cyan */
+    box-shadow: 0px 4px 10px rgba(14, 165, 233, 0.3); /* Glow effect */
+}
+
+/* Placeholder Styling */
+.search-input::placeholder {
+    color: #7a7a7a;
+    font-style: italic;
+}
+
+/* Search Icon Inside Input */
+.search-container .search-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Icon Color Change on Focus */
+.search-container:focus-within .search-icon {
+    color: var(--secondary-color);
+}
+
+/* ===================== */
+/* NAVBAR TOGGLE (MOBILE) */
+/* ===================== */
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* ===================== */
+/* SIDEBAR (MOBILE MENU) */
+/* ===================== */
+@media (max-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background: var(--primary-color);
+        color: var(--white-color);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: left 0.3s ease-in-out;
+        z-index: 1050;
+        padding-top: 20px;
+        overflow-y: auto; /* Enables scrolling inside the sidebar if needed */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        scrollbar-width: none; /* Hides scrollbar for Firefox */
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .tripadvisor-section {
+        display: none !important;
+    }
+
+    .close-sidebar {
+        background: none;
+        border: none;
+        color: var(--white-color);
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .sidebar-logo img {
+        height: 60px;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .sidebar-menu {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .sidebar-menu li {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .sidebar-menu li a {
+        color: var(--white-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .sidebar-menu li a:hover {
+        color: var(--accent-color);
+    }
+
+    .sidebar-menu .collapse {
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    .sidebar-menu .collapse.show {
+        background: var(--deep-blue);
+        padding: 10px;
+    }
+
+    .sidebar-menu .collapse li a {
+        color: var(--white-color);
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .sidebar-menu .collapse li a:hover {
+        background: var(--accent-color);
+        color: var(--white-color);
+    }
+
+    /* Sidebar Overlay */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1049;
+    }
+
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Center Navbar Items */
+    .navbar .d-lg-none {
+        width: 100%;
+        justify-content: center;
+    }
+    .sidebar-menu li a {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .sidebar-menu li a i {
+        font-size: 18px;
+        margin-right: 20px; /* Space between icon and text */
+    }
+    .sidebar-menu .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .navbar-brand img {
+        height: 40px; /* Reduce logo size */
+    }
+
+
+    .navbar .search-box {
+        flex-grow: 1; /* Allow search box to adjust */
+    }
+
+    .navbar-toggler {
+        margin-left: 10px; /* Ensure spacing */
+    }
+}
+
+
+/* ===================== */
+/* NAVBAR DROPDOWN ANIMATION */
+/* ===================== */
+.animated-dropdown {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.nav-item:hover .animated-dropdown {
+    transform: scaleY(1);
+    opacity: 1;
+    display: block;
+}
+
+/* ===================== */
+/* DROPDOWN MENU (NAVBAR) */
+/* ===================== */
+.navbar-nav .dropdown-menu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #1e3a8a; /* Deep Blue */
+    padding: 12px 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background: #0ea5e9; /* Electric Cyan */
+    color: white;
+}
+
+/* ===================== */
+/* SIDEBAR (MOBILE MENU) */
+/* ===================== */
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: #1b1b1b;
+    color: white;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar .close-sidebar {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar-menu li a:hover {
+    color: #0ea5e9;
+}
+
+/* ===================== */
+/* MOBILE DROPDOWN (COLLAPSIBLE MENU) */
+/* ===================== */
+/* Style for Sidebar Dropdown */
+.sidebar-menu .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Small Arrow Icon */
+.sidebar-menu .dropdown-toggle .dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate arrow when expanded */
+.sidebar-menu .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Collapsed Dropdown */
+.sidebar-menu .collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    background: transparent;
+    padding: 0;
+    opacity: 0;
+}
+
+/* Expanded Dropdown */
+.sidebar-menu .collapse.show {
+    max-height: 400px;
+    padding: 8px 10px;
+    background: #F2F2F2 ;
+    opacity: 1;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+/* Remove List Dots */
+.sidebar-menu .collapse ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown Items */
+.sidebar-menu .collapse li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu .collapse li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-menu .collapse li a {
+    display: block;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.sidebar-menu .collapse li a:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* ===================== */
+/* DROPDOWN ARROW FIXES */
+/* ===================== */
+/* Hide Bootstrap's default dropdown arrow */
+.navbar-nav .dropdown-toggle::after,
+.sidebar-menu .dropdown-toggle::after {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Standardized Dropdown Arrow */
+.dropdown-arrow {
+    font-size: 14px;
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate arrow when dropdown is expanded (Desktop & Mobile) */
+.navbar-nav .dropdown-toggle[aria-expanded="true"] .dropdown-arrow,
+.sidebar-menu .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+    transform: rotate(180deg);
+}
+li {
+    list-style: none;
+}
+
+/* TripAdvisor Logo Styling for Mobile */
+.tripadvisor-section-mobile {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tripadvisor-section-mobile .tripadvisor-logo {
+    width: 120px; /* Adjust size for mobile */
+    height: auto;
+    filter: invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tripadvisor-section-mobile .tripadvisor-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tripadvisor-section-mobile {
+        margin-top: 5px; /* Reduce margin */
+    }
+
+    .tripadvisor-section-mobile .tripadvisor-logo {
+        width: 150px; /* Smaller size for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    #transportMenu {
+        max-height: 300px; /* Adjust height as needed */
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: #ccc transparent; /* Scrollbar styling */
+    }
+
+    /* For WebKit-based browsers (Chrome, Safari) */
+    #transportMenu::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    #transportMenu::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #transportMenu::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 3px;
+    }
+}
+@media (max-width: 480px) {
+    /* Adjust Logo Size */
+    .navbar-brand img {
+        height: 35px; /* Further reduce for small screens */
+       width: auto;
+    }
+
+    /* Reduce Search Box Size */
+    .search-container {
+        max-width: 180px; /* Further reduce width */
+        
+    }
+
+    /* Improve Input Sizing */
+    .search-input {
+        font-size: 12px;
+        padding: 5px 8px;
+        padding-left: 28px; /* Space for the icon */
+        
+    }
+}
+

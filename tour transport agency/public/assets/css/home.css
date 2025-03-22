@@ -1,0 +1,1142 @@
+:root {
+    --primary-color1: #004b8d; /* Initial Button Color */
+    --secondary-color: #0ea5e9; /* Left Corner Color */
+    --hover-bg: #0a1019; /* Hover Effect Color */
+    --white-color: #ffffff;
+    --font-rubik: "Rubik", sans-serif;
+}
+
+/* Reset Default Spacing */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ================= HERO SECTION (VIDEO) ================= */
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* VIDEO ANIMATION: FADE-IN + SLOW ZOOM */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0;
+    animation: fadeZoom 1.8s ease-in-out forwards;
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white-color);
+    max-width: 800px;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+/* HERO TITLE ANIMATION */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1.5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 1.5s ease-in-out 1s forwards;
+}
+
+/* HERO SUBTITLE ANIMATION */
+.hero-subtitle {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1.8s ease-in-out 1.2s forwards;
+}
+
+/* CTA BUTTON ANIMATION */
+.btn-hero {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--accent-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.5s ease-in-out 1.5s forwards;
+}
+
+/* BUTTON HOVER EFFECT */
+.btn-hero:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= OFFERS SECTION ================= */
+.offers-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: var(--white-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.offers-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.offers-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+/* ================= CARD STYLING ================= */
+.card-offer {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 450px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effects */
+.card-offer:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Overlay on Cards */
+.card-offer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
+}
+
+/* Discount Badge */
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: var(--accent-color);
+    color: var(--white-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 0 20px 20px 0;
+    z-index: 3;
+}
+
+/* Card Content */
+.card-body {
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Typography */
+.card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.card-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color); /* Uses your predefined color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Style for the Marrakech description text */
+.card-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--white-color);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/* Animated Button */
+.btn-offer {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-offer:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Button Text & Arrow Animation */
+.btn-offer span {
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn-offer:hover span:first-child {
+    transform: translateX(-10px);
+}
+
+.btn-offer:hover span:last-child {
+    transform: translateX(10px);
+}
+
+/* ================= DECORATION IMAGES ================= */
+/* Left Decoration */
+.deco-left {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+/* Right Decoration */
+.deco-right {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+/* Hide Decorations in Hero Section */
+.hero-section .deco-left,
+.hero-section .deco-right {
+    display: none !important;
+}
+
+/* ================= SECTION WITH BACKGROUND ================= */
+.section-with-background {
+    position: relative;
+    background-color: var(--white-color);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+/* Left Decoration */
+.section-with-background .deco-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+/* Right Decoration */
+.section-with-background .deco-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+/* ================= SECTION transport touristique ================= */
+
+.luxury-vehicles {
+    position: relative;
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+/* White Background Container with Left & Right Spacing */
+.luxury-vehicles-container {
+    background: white;
+    border-radius: 25px;
+    padding: 60px 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Inner Content Container */
+.content-container {
+    padding: 20px 0;
+}
+
+/* Decorative Elements Inside */
+.deco-left,
+.deco-right {
+    position: absolute;
+    width: 350px;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.deco-left {
+    left: -20px;
+    top: 15%;
+}
+
+.deco-right {
+    right: -20px;
+    bottom: 15%;
+}
+
+/* Vehicle Items */
+.vehicle-item {
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Background for Each Vehicle - Rotated & Soft Border */
+.vehicle-card {
+    background: whitesmoke;
+    max-width: 250px; /* Limits the width but keeps flexibility */
+    max-width: 100%; /* Ensures it adjusts dynamically */
+    min-height: 200px; /* Keeps uniform height for balance */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vehicle Image */
+.vehicle-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.vehicle-img img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.vehicle-item:hover .vehicle-card {
+    background: var(--primary-color);
+    transform: rotate(0deg) scale(1.05);
+}
+
+.vehicle-item:hover .brand-name {
+    color: var(--primary-color);
+}
+
+.vehicle-item:hover .vehicle-img img {
+    transform: scale(1.15);
+}
+
+/* Vehicle Info */
+.vehicle-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.vehicle-info .info-item {
+    margin: 5px 0;
+}
+
+.vehicle-info i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Show Info on Hover */
+.vehicle-item:hover .vehicle-info {
+    display: block;
+}
+
+.feature-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: 0.5s;
+}
+
+/* Assign different backgrounds to each card */
+.bg-1 {
+    background-image: url("/assets/images/banners/feature-card-bg1.png");
+}
+
+.bg-2 {
+    background-image: url("/assets/images/banners/feature-card-bg2.png");
+}
+
+.bg-3 {
+    background-image: url("/assets/images/banners/feature-card-bg3.png");
+}
+
+/* Hover Effect */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style SVG icons */
+.feature-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #333; /* Default color */
+    transition: fill 0.3s ease-in-out;
+}
+
+/* Hover Effect: Change icon color to white */
+.feature-card:hover .feature-icon {
+    background-color: #000; /* Dark background */
+}
+
+.feature-card:hover .feature-icon svg {
+    fill: white;
+}
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1); /* Light background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+.feature-card h5 {
+    font-size: 20px;
+}
+
+/* about us section */
+
+.about-us {
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.about-bg-left {
+    background: url('{{ asset("assets/images/banners/deco-left.png.webp") }}')
+        no-repeat center center;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.about-bg-right {
+    background: url('{{ asset("assets/images/banners/deco-right.png.webp") }}')
+        no-repeat center center;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.tab-container {
+    display: flex;
+    gap: 4px; /* Adjust gap between buttons */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Make the entire container clickable */
+}
+
+.btn-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px; /* Padding to make buttons easier to click */
+    margin: 0; /* Remove margin to ensure the gap is part of the clickable area */
+    cursor: pointer; /* Ensure pointer cursor shows */
+    position: relative; /* Ensure the button is positioned correctly */
+    border: none; /* Remove default button border */
+    background: none; /* Remove default button background */
+    color: inherit; /* Inherit text color */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.btn-link:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.btn-link.active-tab {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color); /* Add underline for active tab */
+}
+
+.btn-link.active-tab .icon-tab {
+    stroke: var(--primary-color); /* Change icon color for active tab */
+}
+
+.btn-link .icon-tab {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-color);
+    transition: stroke 0.3s ease-in-out; /* Smooth icon color transition */
+}
+
+.icon-tab {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-color);
+    transition: stroke 0.3s ease-in-out;
+}
+
+.btn-link.active-tab .icon-tab {
+    stroke: var(--primary-color);
+}
+
+.about-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-height: 400px;
+    gap: 15px;
+}
+
+.image-large {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.image-small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.image-small img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-grid img {
+    transition: all 0.4s ease-in-out;
+    filter: brightness(90%);
+}
+
+.image-grid img:hover {
+    filter: brightness(100%);
+    transform: rotate(2deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Ensure Button & Customer Group Align */
+.d-flex.align-items-center.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Make Customer Group More Noticeable */
+.d-flex.align-items-center img {
+    width: 100px;
+    height: 35px;
+    border-radius: inherit;
+    
+}
+.active-tab .icon-tab {
+    stroke: var(--primary-color);
+}
+
+.text-secondary .icon-tab {
+    stroke: var(--text-color);
+}
+
+.why-choose-us {
+    background: url("{{ asset ('assets/images/banners/hero.webp') }}") no-repeat
+        center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+/* Excursion Section */
+.excursion-section {
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Container Spacing */
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Excursion Card */
+.excursion-card {
+    background: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.excursion-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Section */
+.excursion-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.excursion-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background 0.3s ease-in-out;
+}
+
+.excursion-image:hover::after {
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay effect */
+}
+
+.excursion-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.excursion-image:hover img {
+    opacity: 0.7; /* Adjust darkness (0.7 means 70% opacity) */
+}
+
+/* Gallery Icon */
+.gallery-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 75, 141, 0.8);
+    color: var(--white-color);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    z-index: 10; /* Ensure it's clickable above overlays */
+    pointer-events: auto;
+}
+
+.gallery-icon:hover {
+    background: var(--accent-color);
+}
+
+/* Excursion Info */
+.excursion-info {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Title & Transport */
+.excursion-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.excursion-transport {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Description */
+.excursion-description {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Reserve Button */
+.reserve-btn {
+    background: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+    width: 100%;
+}
+
+.reserve-btn:hover {
+    background: var(--primary-color);
+}
+
+/* Fix Carousel Controls */
+.custom-carousel-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Move arrows to the edges */
+.carousel-control-prev {
+    left: 10px; /* Push to left max */
+}
+
+.carousel-control-next {
+    right: 10px; /* Push to right max */
+}
+
+/* Fix carousel icons - Make them fully white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: contain !important;
+    filter: brightness(0) invert(1); /* Converts to pure white */
+}
+
+/* Ensure buttons remain clickable */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1050;
+    opacity: 1 !important;
+}
+
+/* Remove Bootstrap's default modal background */
+.gallery-modal {
+    background: transparent !important;
+    backdrop-filter: none !important;
+}
+
+/* Ensure modal content is transparent */
+.gallery-modal .modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Close button styling */
+.gallery-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: white !important;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    z-index: 1050; /* Ensure it's above everything */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure hover effect is visible */
+.gallery-close-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure the 'X' icon inside is white */
+.gallery-close-btn::before {
+    content: "\f00d"; /* FontAwesome close icon */
+    font-family: "Font Awesome 5 Free"; /* Ensure FontAwesome is loaded */
+    font-weight: 900;
+    color: white;
+    font-size: 18px;
+}
+
+/* Ensure overlay does not cover gallery icon */
+.excursion-image:hover .gallery-icon {
+    z-index: 20; /* Higher than the overlay */
+}
+
+/* Dark Background Overlay */
+.gallery-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    z-index: 1040; /* Below modal but above everything else */
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay when active */
+.gallery-overlay.active {
+    display: block;
+    opacity: 1;
+}
+.custom-btn2 {
+    background-color: white;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 11px 42px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.custom-btn2::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: transform 0.7s;
+}
+
+.custom-btn2:hover {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.custom-btn2:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.faq-section {
+    background-color: #f8f9fa;
+}
+
+.accordion-button {
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Hover Effect */
+.accordion-button:hover {
+    color: var(--secondary-color);
+}
+
+/* Focus Effect */
+.accordion-button:focus {
+    box-shadow: 0 0 5px var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.contact-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Hide Google Translate toolbar initially */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Hide Google Translate dropdown */
+.goog-te-gadget {
+    display: none !important;
+}
+
+/* Prevent translation of language selector */
+.notranslate {
+    text-transform: none !important;
+}
+
+/* Reset any unwanted top positioning */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    display: none !important;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    z-index: 9999;
+    /* Ensures popup stays above all elements */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    /* Ensures the popup content itself stays on top */
+}
+
+
+.popup-content h3 {
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.popup-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .deco-left, .deco-right {
+        width: 80px; /* Make decorations smaller on mobile */
+    }
+}
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .search-container {
+        margin-top: 16px;
+        align-items: center;
+    }
+    .hero-title {
+        font-size: 28px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.4rem;
+    }
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    .btn-hero {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .btn-hero {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-with-background .deco-left,
+    .section-with-background .deco-right {
+        width: 150px;
+        opacity: 0.6;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        right: -10px;
+    }
+}

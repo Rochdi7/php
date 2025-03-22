@@ -1,0 +1,229 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    color: var(--white-color);
+    z-index: 3;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/* Section Title */
+.search-title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+/* Cards */
+.excursion-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.excursion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.excursion-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+}
+.excursion-card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px;
+    color: #333;
+}
+.excursion-card .card-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 15px 15px;
+}
+.excursion-card .btn {
+    display: block;
+    margin: 15px;
+    width: calc(100% - 30px);
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.excursion-card .btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Animation AOS */
+[data-aos="zoom-in-up"] {
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+}
+
+.custom-btn {
+    background-color: #004B8D;
+    border-radius: 5px;
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white-color);
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 16px 26px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    /* Add a subtle box-shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for hover */
+.custom-btn::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 15%;
+    right: -20%;
+    top: -4%;
+    height: 150%;
+    width: 150%;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #0A1019;
+    transform: skewX(45deg) scale(0, 1);
+    z-index: -1;
+    transition: all 0.5s ease-out 0s;
+}
+
+/* Hover effect for button background */
+.custom-btn:hover {
+    background-color: #003B6F; /* Slightly darker color for hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.custom-btn:hover::before {
+    width: 20%;
+}
+
+.custom-btn:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+}
+
+/* Icon movement */
+.custom-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.custom-btn .text {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-btn:hover .text {
+    transform: translateX(-5px);
+}
+
+.custom-btn .icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-btn:hover .icon {
+    transform: translateX(5px);
+}
+
+.custom-btn:hover::after {
+    transform: skewX(10deg) scale(-1, 1);
+
+}
+/* ================= DECORATION IMAGES ================= */
+/* Left Decoration */
+.deco-left {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+/* Right Decoration */
+.deco-right {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+/* Hide Decorations in Hero Section */
+.hero-section .deco-left,
+.hero-section .deco-right {
+    display: none !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .deco-left, .deco-right {
+        width: 80px; /* Make decorations smaller on mobile */
+    }
+}
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 12px; /* Slightly smaller font on mobile */
+        padding: 12px 20px; /* Adjust padding for smaller screens */
+    }
+}
