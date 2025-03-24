@@ -20,7 +20,6 @@ Each project will typically include:
 - `index.php`: The main PHP script or entry point.  
 - Supporting files such as stylesheets (`style.css`), JavaScript files, or other assets.  
 - A detailed `README.md` for every project explaining its purpose, usage, and setup.  
-
 ---
 
 ## 🔧 How to Use
